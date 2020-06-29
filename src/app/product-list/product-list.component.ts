@@ -9,9 +9,13 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
-
+  
   share() {
     window.alert('The product has been shared!');
+  }
+
+  onNotify(){
+    window.alert("子组件中的事件由父组件控制")
   }
 }
 
